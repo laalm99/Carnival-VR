@@ -1,18 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
+using UltimateXR.Core.Components.Composite;
+using UltimateXR.Manipulation;
 using UnityEngine;
 
-public class WaterGun : MonoBehaviour
+public class WaterGun : UxrGrabbableObjectComponent<WaterGun>
 {
-    // Start is called before the first frame update
-    void Start()
+    ParticleSystem waterShoot;
+
+    private void Start()
     {
-        
+        waterShoot = this.GetComponent<ParticleSystem>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (this.IsBeingGrabbed)
+        {
+            waterShoot.Play();
+        }
     }
 }
