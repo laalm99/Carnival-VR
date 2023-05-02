@@ -6,18 +6,17 @@ using UnityEngine;
 
 public class WaterGun : UxrGrabbableObjectComponent<WaterGun>
 {
-    ParticleSystem waterShoot;
-
-    private void Start()
-    {
-        waterShoot = this.GetComponent<ParticleSystem>();
-    }
+    [SerializeField] ParticleSystem waterShoot;
 
     void Update()
     {
-        if (this.IsBeingGrabbed)
+        if (UxrGrabManager.Instance.IsBeingGrabbed(GrabbableObject))
         {
             waterShoot.Play();
+        }
+        else
+        {
+            waterShoot.Stop();
         }
     }
 }

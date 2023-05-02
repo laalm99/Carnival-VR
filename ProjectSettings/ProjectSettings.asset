@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: Lamya
-  productName: Carnival-VR
+  productName: CarnivalVR
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -135,7 +135,9 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleVersion: 0.1.0
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: -5270182759002737709, guid: 8e9b27456258f40c0b50996cd5c0fbfa, type: 2}
+  - {fileID: 11400000, guid: 4534c4bb7aa0f48e78f8ffc2f8d5c0a6, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -155,7 +157,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.UnityTechnologies.com.unity.template.urpblank
+    Android: com.Lamya.CarnivalVR
     Standalone: com.UnityTechnologies.com.unity.template.urp-blank
     iPhone: com.Unity-Technologies.com.unity.template.urp-blank
   buildNumber:
@@ -164,7 +166,7 @@ PlayerSettings:
     tvOS: 0
   overrideDefaultApplicationIdentifier: 1
   AndroidBundleVersionCode: 1
-  AndroidMinSdkVersion: 22
+  AndroidMinSdkVersion: 29
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
   aotOptions: 
@@ -247,7 +249,7 @@ PlayerSettings:
   useCustomBaseGradleTemplate: 0
   useCustomGradlePropertiesTemplate: 0
   useCustomProguardFile: 0
-  AndroidTargetArchitectures: 1
+  AndroidTargetArchitectures: 2
   AndroidTargetDevices: 0
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
@@ -780,10 +782,27 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
   webGLPowerPreference: 2
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    Android: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK
+    EmbeddedLinux: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK
+    GameCoreScarlett: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK
+    GameCoreXboxOne: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK
+    LinuxHeadlessSimulation: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK
+    Lumin: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK
+    Nintendo Switch: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK
+    PS4: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK
+    PS5: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK
+    Stadia: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK
+    Standalone: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK
+    WebGL: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK
+    Windows Store Apps: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK
+    XboxOne: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK
+    iPhone: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK
+    tvOS: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK
   additionalCompilerArguments: {}
   platformArchitecture: {}
-  scriptingBackend: {}
+  scriptingBackend:
+    Android: 1
   il2cppCompilerConfiguration: {}
   managedStrippingLevel: {}
   incrementalIl2cppBuild: {}
