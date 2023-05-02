@@ -5,16 +5,18 @@ using UnityEngine;
 
 public class CanInfo : MonoBehaviour
 {
-    private Transform startPos;
-    public Transform StartPos => startPos;
+    private Vector3 startPos;
+    public Vector3 StartPos => startPos;
+    private Vector3 startRotation;
+    public Vector3 StartRotation => startRotation;
 
     public event Action ResetPosition;
 
     // Start is called before the first frame update
     void Start()
     {
-        startPos.position = transform.position;
-        startPos.rotation = transform.rotation;
+        startPos = transform.position;
+        startRotation = transform.eulerAngles;
     }
 
     private void OnCollisionEnter(Collision collision)

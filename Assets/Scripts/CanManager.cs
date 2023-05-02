@@ -25,13 +25,13 @@ public class CanManager : MonoBehaviour
 
     void ResetCans()
     {
-        timer = 0;
+        timer = 3;
         if(timer <= 0)
         {
             for(int i=0; i<cans.Length; i++)
             {
-                cans[i].transform.position = cans[i].StartPos.position;
-                cans[i].transform.rotation = cans[i].StartPos.rotation;
+                cans[i].transform.position = cans[i].StartPos;
+                //cans[i].transform.rotation = cans[i].StartRotation;
             }
         }
     }
