@@ -21,7 +21,11 @@ public class CanInfo : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        ResetPosition?.Invoke();
+        if (collision.collider.CompareTag("ball"))
+        {
+            ResetPosition?.Invoke();
+
+        }
     }
 
 

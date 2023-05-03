@@ -9,29 +9,36 @@ public class CanManager : MonoBehaviour
     private float timer = 0;
 
 
+
     // Start is called before the first frame update
     void Start()
     {
         for(int i =0; i<cans.Length; i++)
         {
-            cans[i].ResetPosition += ResetCans;
+            cans[i].ResetPosition += StarTimer;
         }
     }
 
-    private void Update()
+    void Update()
     {
         timer -= Time.deltaTime;
+        ResetCans();
+    }
+
+    void StarTimer()
+    {
+        timer = 3;
+
     }
 
     void ResetCans()
     {
-        timer = 3;
         if(timer <= 0)
         {
             for(int i=0; i<cans.Length; i++)
             {
                 cans[i].transform.position = cans[i].StartPos;
-                //cans[i].transform.rotation = cans[i].StartRotation;
+                cans[i].transform.eulerAngles = cans[i].StartRotation;
             }
         }
     }
