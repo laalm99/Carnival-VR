@@ -10,7 +10,7 @@ public class WaterGun : UxrGrabbableObjectComponent<WaterGun>
 
     void Update()
     {
-        /*if ()
+        if (UxrGrabManager.Instance.IsBeingGrabbed(GrabbableObject))
         {
             waterShoot.Play();
         }
@@ -18,7 +18,7 @@ public class WaterGun : UxrGrabbableObjectComponent<WaterGun>
         {
             waterShoot.Stop();
         }
-        */
+        
         if (Input.GetMouseButtonDown(0))
         {
             waterShoot.Play();
