@@ -15291,6 +15291,16 @@ PrefabInstance:
       propertyPath: _rigInfo._rightArmInfo._handUniversalLocalAxes._universalToActualAxesRotation.z
       value: 0.68568027
       objectReference: {fileID: 0}
+    - target: {fileID: 474319650110039817, guid: dc011efb41f2d4a419389aefb4b4270d,
+        type: 3}
+      propertyPath: _listControllerEvents.Array.data[0]._buttons
+      value: 131072
+      objectReference: {fileID: 0}
+    - target: {fileID: 474319650110039817, guid: dc011efb41f2d4a419389aefb4b4270d,
+        type: 3}
+      propertyPath: _listControllerEvents.Array.data[1]._buttons
+      value: 131072
+      objectReference: {fileID: 0}
     - target: {fileID: 474319650110039819, guid: dc011efb41f2d4a419389aefb4b4270d,
         type: 3}
       propertyPath: m_RootOrder
